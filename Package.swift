@@ -25,7 +25,8 @@ let package = Package(
                 "Amplitude", "Segment"
             ],
             exclude: ["Info.plist"],
-            publicHeadersPath: "."
+            publicHeadersPath: ".",
+            cSettings: [.headerSearchPath("Classes/")]
         )
     ]
 )

@@ -3,15 +3,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "analytics-ios-integration-amplitude",
+    name: "SegmentAmplitude",
     platforms: [
         .iOS(.v10),
         .macOS(.v10_13)
     ],
     products: [
         .library(
-            name: "Segment-Amplitude",
-            targets: ["Segment-Amplitude"]
+            name: "SegmentAmplitude",
+            targets: ["SegmentAmplitude"]
         )
     ],
     dependencies: [
@@ -20,7 +20,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Segment-Amplitude",
+            name: "SegmentAmplitude",
             dependencies: [
                 "Amplitude", "Segment"
             ],

@@ -3,7 +3,7 @@
 #if defined(__has_include) && __has_include(<Analytics/Analytics.h>)
 #import <Analytics/Analytics.h>
 #else
-#import <Segment/SEGAnalytics.h>
+@import Segment;
 #endif
 
 #if defined(__has_include) && __has_include(<Amplitude_iOS/Amplitude.h>)
@@ -11,7 +11,7 @@
 #elif defined(__has_include) && __has_include(<Amplitude-iOS/Amplitude.h>)
 #import <Amplitude-iOS/Amplitude.h>
 #else
-#import <Amplitude/Amplitude.h>
+@import Amplitude;
 #endif
 
 typedef void(^SEGAmplitudeSetupBlock)(Amplitude *amplitude);

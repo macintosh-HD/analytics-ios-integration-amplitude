@@ -5,7 +5,8 @@ import PackageDescription
 let package = Package(
     name: "analytics-ios-integration-amplitude",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v10),
+        .macOS(.v10_13)
     ],
     products: [
         .library(

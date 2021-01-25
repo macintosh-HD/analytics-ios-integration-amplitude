@@ -24,7 +24,8 @@ let package = Package(
             dependencies: [
                 "Amplitude", "Segment"
             ],
-            exclude: ["Info.plist"]
+            exclude: ["Info.plist"],
+            publicHeadersPath: "."
         )
     ]
 )
